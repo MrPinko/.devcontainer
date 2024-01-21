@@ -1,0 +1,34 @@
+RUN apk update
+
+RUN apk add bash git make musl-dev curl
+
+# Installing 'alpine-starship'
+
+RUN apk add starship
+
+# Installing 'fish shell and fisher'
+
+RUN apk add fish
+SHELL ["/usr/bin/fish", "-c"]
+
+# Changing default shell to Fish
+
+RUN apk add shadow
+
+RUN chsh root -s /usr/bin/fish
+
+RUN apk del shadow
+
+# Fisher
+
+RUN curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+# Fish shell plugin
+# fish-async-prompt for fixing spaceship slowness inside git repo
+RUN fisher install acomagu/fish-async-prompt \
+    fisher install jethrokuan/z \
+    fisher install PatrickF1/fzf.fish \
+    gazorby/fish-abbreviation-tips
+
+# Needed for fzf.fish
+RUN apk add fzf fd bat

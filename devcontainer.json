@@ -20,12 +20,13 @@
 				"mhutchie.git-graph",
 				"eamodio.gitlens",
 				"christian-kohler.path-intellisense",
-				"oderwat.indent-rainbow"
+				"oderwat.indent-rainbow",
+				"Gruntfuggly.todo-tree"
 			],
 			"settings": {
 				"terminal.integrated.profiles.linux": {
 					"fish": {
-						"path": "fish"
+						"path": "/usr/bin/fish"
 					}
 				}
 			}

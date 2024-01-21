@@ -1,4 +1,4 @@
-# Add all the required programming language inside the Dockerfile
+# You need to declare all the required programming language inside the Dockerfile, check TODO
 
 # Cool site
 https://github.com/jorgebucaran/awsm.fish
