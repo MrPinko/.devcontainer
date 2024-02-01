@@ -14,7 +14,4 @@ abbr -a gp 'git pull'
 abbr -a ga 'git add'
 abbr -a gc 'git commit'
 
-abbr -a gr 'go run'
-abbr -a grm 'go run main.go'
-
-abbr -a ni 'npm i' 
+abbr -a ni 'npm i'

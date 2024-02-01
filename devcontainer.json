@@ -28,7 +28,8 @@
 					"fish": {
 						"path": "/usr/bin/fish"
 					}
-				}
+				},
+				"terminal.integrated.sendKeybindingsToShell": true
 			}
 		}
 	}
