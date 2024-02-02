@@ -12,6 +12,6 @@ fzf_configure_bindings --directory=\cf
 
 abbr -a gp 'git pull'
 abbr -a ga 'git add'
-abbr -a gc 'git commit'
+abbr -a gc 'git commit -m ""'
 
 abbr -a ni 'npm i'
